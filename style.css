@@ -1,0 +1,671 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;    
+}
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height:59px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+}
+
+/*  Navigation Bar: Logo  */
+#logo{
+    margin: 4px 5px;
+}
+#logo img{
+    height: 100px;
+    margin: 0px 10px;
+}
+
+/*  Navigation Bar: List Items */
+.navbar ul{
+    display: flex;
+    padding: -1px 45px;
+    
+}
+
+.navbar ul li{
+    list-style: none;
+    font-size: 1.5rem;
+}
+.navbar ul li a{
+   display: block;
+   padding: 3px 33px;
+   border-radius: 10px;
+   text-decoration: none;
+   color: white;
+}
+.navbar ul li a:hover{
+   background-color: tomato;
+    color: white;
+ }
+ #mainMenu li ul {
+	position:absolute;
+	margin:0px;
+	padding:0px;
+    text-align: center;
+    display:none;
+}
+#mainMenu li ul li {
+	width:200px;
+	font-size: large;
+	border-top:none;
+}
+
+#mainMenu li:hover ul {
+	display:block;
+}
+
+.header{
+    height: 780px;
+    background-color:#1C2833;    
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 75% 77%, 0 100%);
+}
+
+  
+/* Home section */
+#home{
+    display: flex;
+    padding: 116px 0px;
+    font-size: 25px;  
+}
+#profile img{
+    height: 350px;
+    margin: 5px;
+    padding: 0px 120px;
+   margin-top: -45px; 
+}
+#heading{
+    color: white;
+    text-align: center;
+    padding: 0px -50px;
+    margin: 6px 100px;
+    }   
+    
+.contain img{
+    height: 70px;
+    padding: 5px;
+}
+.contain{
+    display: flex;
+    padding: 10px 150px;
+}
+.btn{
+    font-size: 21px;
+    padding: 30px 60px;
+    border-radius: 10px;
+    /* padding: 14px; */
+    background-color: red;
+    border: 2px solid black;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.btn:hover{
+    background-color: white;
+}
+
+#btn2{
+    margin-top: 50px;
+    height: 42px;
+}
+
+
+ /* Bio Section*/
+ #About{
+     display: flex;
+     margin: 100px 0px;
+ }
+ #About img{
+    width: 180%;
+    margin: -26px 38px;
+ }
+#About h1{
+    text-align: center;
+    color: red;
+}
+#About p{
+    padding: 0px 98px;
+    color: black;
+}
+
+
+ /* Education */
+ #Education{
+     background-color:#1C2833 ;
+     height: 500px;
+     margin: 140px 50px;
+     color: white;
+ }
+ #Education h1{
+    text-align: center;
+    margin: 0px 40px;
+    padding-top: 50px;
+}
+.Edu1{
+    margin: 40px 0px;
+}
+.Edu{
+    margin: 40px 0px;
+    display: flex;
+}
+.Edu1 h3{
+    margin: 0px 40px;
+}
+.Edu1 h5{
+    margin: 0px 70px;
+}
+.Edu h3{
+    margin: 0px 40px;
+}
+.Edu h5{
+    margin: 0px 70px;
+}
+
+ /* Work experience */
+ #Work{
+     background-color:  #F2F2F2;
+     height: 350px;
+     text-align: center;
+     margin: -44px 40px;
+ }
+ #Work h1{    
+    padding: 35px 0px;
+ }
+
+ /* Projects Section */
+  #Projects{
+     margin-top: 120px;
+     background-color: #1C2833;
+    }
+ #Projects h1{
+    text-align: center;  
+    color: white; 
+}
+ #proj{
+    margin: 28px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* display: flex; */
+    text-align: center;
+}
+#proj .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 3px 95px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 70px;
+}
+#proj .box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+} 
+#proj .box p{
+    font-family: 'Bree Serif', serif;
+    color: black;
+}
+#btn{
+    padding: 14px;
+    background-color: red;
+    border: 2px solid black;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.5s;   
+}
+#btn:hover{
+    transform: translateY(-15px);
+    /* background-color: rgba(0,0,0,0.8); */
+    background-color:rgb(226, 69, 69)
+    }
+    
+#btn a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Skills */
+
+   #skills p {
+        margin-top: 0;
+        margin-bottom: 5rem;
+}
+#skills .heading{
+    text-align: center;
+}
+section#skills{
+    background: #F2F2F2;
+    margin: 75px 10px;
+}
+section#skills .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 6rem;
+    text-align: center;
+}
+section#skills .card-wrapper .card{
+    background: #FFFFFF;
+    padding: 3rem 2rem;
+    position: relative;
+    padding-top: 5rem;
+    transition: all 0.3s ease;
+    transition: transform 0.5s;
+}
+
+section#skills .card-wrapper .card img{
+    width: 100px;
+    position: absolute;
+    top: -3.5rem;
+    left: 35%;
+}
+section#skills .card-wrapper .card h2{
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+section#skills .card-wrapper .card p{
+    font-family: 'Lato', sans-serif;
+    color: #898989;
+    line-height: 1.6;
+}
+section#skills .card-wrapper .card:hover{
+    background: #161616;
+    transform: translateY(-20px);
+}
+
+section#skills .card-wrapper .card:hover h2, section.skills .card-wrapper .card:hover p{
+    color: #FFFFFF;
+}
+
+
+/* Testimonials */
+#comment{
+    background: #F2F2F2;
+    height: 500px;
+}
+#comment h1{
+    text-align: center;
+    color: #111;
+    margin: 60px 0px;
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides .box{
+max-width: calc(50% - 38px);
+border: 2px solid white;   
+padding: 60px 40px;
+    margin: 20px;
+}
+.mySlides .box1{
+    border: 2px solid white;
+    
+    padding: 0px 20px;
+    margin: 0px 20px;
+}
+.mySlides .box2{
+    border: 2px solid white;
+    padding: 0px 20px;
+    margin: 0px 20px;
+}
+.mySlides .box h3{
+    color: white;
+}
+.mySlides .box p{
+    color: white;
+}
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: fixed;
+  width: auto;
+  margin-top: -100px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 50px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.prev {
+    cursor: pointer;
+    position: absolute;
+    width: auto;
+    margin-top: -100px;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  .next {
+    cursor: pointer;
+    position: absolute;
+    width: auto;
+    margin-top: -100px;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+  
+  
+  /* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+ /* Contact Section */
+.contact{
+    background-color: #1C2833;
+}
+.row{
+    margin: -52px 0px;
+}
+#contact .heading{
+    color: white;
+    text-align: center;
+    margin: 24px 0px;
+    padding: 41px;
+}
+.contact .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contact .row .content{
+    flex: 1 1 30rem;
+    padding: 4rem;
+    padding-bottom: 0;
+}
+.contact .row form{
+    flex: 1 1 45rem;
+    padding: 2rem;
+    margin: 2rem;
+    margin-bottom: 4rem;
+}
+.contact .row form .box{
+    padding: 1.5rem;
+    margin: 1rem 0;
+    background:#333 ;
+    color: #fff;
+    text-transform: none;
+    font-size: 20px;
+    width: 100%;
+}
+.contact .row form .box::placeholder{
+    text-transform: capitalize;
+}
+.contact .row form .message{
+    height: 15rem;
+    resize: none;
+}
+.contact .row .content .title{
+    text-transform: uppercase;
+    color: #fff;
+    padding: 2px 20px
+}
+.contact .row .content .media{
+    display: flex;
+}
+.contact .row .content .media i{
+    padding: 30px 45px;
+    font-size: 2.5rem;
+}
+.contact .row .content .info h3{
+    display: flex;
+    align-items: center;
+    color: #eee;
+    padding: 24px 27px;
+    font-weight: normal;
+}
+
+.contact .row form{
+    margin: 3rem 0;
+}
+#submit{
+    padding: 14px 50px;
+
+    border: 2px solid black;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+footer{
+    background-color: white;
+    text-align: center;
+    color: black;
+}
+
+
+/*hamberger menu */
+@media (min-width:1024px){
+  .hamberger{
+      display: none;
+  }
+  .mobile-nav{
+      display: none;
+  }
+}
+@media (max-width:1024px){
+    header #main-nav{
+        display: none;
+    }
+    .site-main-wrapper{
+        position: relative;
+    }
+    .hamberger{
+        position: fixed;
+        top: 40px;
+        right: 40px;
+        z-index: 11;
+        background: none;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+    .hamberger img{
+        width: 30px;
+    }
+    .mobile-nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1001;
+        background:#F2F2F2 ;
+        width: 40%;
+        height: 100%;
+        padding: 2rem;
+        padding-top: 5rem;
+        transform: translateX(-100%);
+        transition: all .5s ease-in-out;
+    }
+    .mobile-nav ul li a{
+        display: block;
+        padding: 30px 33px;
+        border-radius: 10px;
+     }
+     .mobile-nav ul li a:hover{
+        background-color: tomato;
+      }
+    .mobile-nav li ul {
+        position:absolute;
+        margin:-27px 175px;
+        padding:0px;
+        text-align: center;
+        display:none;
+    }
+    .mobile-nav li ul li {
+        width:200px;
+        border-top:none;
+    }
+    .mobile-nav li ul li a {
+        font-size: 25px;
+    }
+    .mobile-nav li ul li a:hover {
+        height: 50px;
+        padding: 6px 0px;
+    }
+    
+    .mobile-nav li:hover ul {
+        display:block;
+    }
+    .open{
+        transform: translateX(0);
+    }
+    .times{
+        position: fixed;
+        top: 30px;
+        right: 30px;
+        border: none;
+        background: none;
+        outline: none;
+        cursor: pointer;
+    }
+    .times img{
+        width: 30px;
+    }
+    .mobile-nav ul{
+        list-style-type: none;
+    }
+    
+    .mobile-nav ul li a{
+        color: black;
+        text-decoration: none;
+        font-size: 2rem;
+    }
+    
+    .mobile-nav button{
+        margin-top: 1rem;
+    }
+
+}
+
+/* Responsiveness */
+    @media(max-width:1024px) {
+    header #main-nav{
+        display: none;
+    }
+    header{
+        width: max-content;
+    }
+
+    #About img{
+        width: 180%;
+        margin: -10px -22px;
+     }
+    #About p{
+        padding: 0px 145px;
+        color: black;
+    }
+    #Education{
+        width: max-content;
+        margin: 140px 0px;
+    }
+     #Work{
+        width: max-content;
+    } 
+
+    
+    #Projects{
+        width: max-content;
+    }
+    #proj{
+            margin: 28px 200px;
+            grid-template-columns: repeat(1, 1fr);   
+    }
+
+    #skills{
+        width: max-content;
+    }
+    section#skills .card-wrapper{
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 14rem;
+    }
+    #comment{
+        width: max-content;
+    }
+    .slideshow-container {
+        max-width: 1266px;
+      }
+      .next{
+          position: absolute;
+      }
+    
+    .contact{
+        padding: 0 632px;
+    }
+   
+    .row{
+        margin: -52px 0px;
+    }
+    #contact .heading{
+        color: white;
+        text-align: center;
+        margin: 24px -130px;
+        padding: 41px;
+    }
+    .contact .row{
+        display: table;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0 -512px;
+    }
+   
+   }
+   
